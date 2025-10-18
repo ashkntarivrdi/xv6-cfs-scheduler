@@ -204,19 +204,15 @@ The repository includes sample parser scripts and example plots exported from th
 # Project structure & important files
 
 ```
-/               # xv6 root (modified)
-  ├─ kernel/
-  │   ├─ proc.c        # main changes: scheduler, allocproc, yield, wakeup, kill
-  │   ├─ proc.h
-  │   ├─ rb_tree.c     # red-black tree implementation (insert/remove/min)
-  │   └─ rb_tree.h
-  ├─ user/
-  │   ├─ setNice.c     # user wrapper for syscall
-  │   └─ benchmark.c   # user benchmark programs (CPU/I/O/mixed)
-  ├─ tools/
-  │   ├─ log_parser/
-  │   │   ├─ parse_qemu_log.py
-  │   │   └─ plot_results.py
+  ├─src/
+  │   ├─ kernel/
+  │   │   ├─ proc.c        # main changes: scheduler, allocproc, yield, wakeup, kill
+  │   │   ├─ proc.h
+  │   │   ├─ rb_tree.c     # red-black tree implementation (insert/remove/min)
+  │   │   └─ rb_tree.h
+  │   ├─ user/
+  │   │   ├─ setNice.c     # user wrapper for syscall
+  │   │   └─ benchmark.c   # user benchmark programs (CPU/I/O/mixed)
   └─ README.md
 ```
 
